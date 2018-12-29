@@ -41,7 +41,7 @@
     "react-native-screens": "^1.0.0-alpha.11",
     "react-navigation-deprecated-tab-navigator": "1.3.0",
     "react-navigation-drawer": "0.5.0",
-    "react-navigation-stack": "github:zoom-us/react-navigation-stack#f422ce8cd6f839acd1576933c0a1ad38ef4d665a",
+    "react-navigation-stack": "github:zoom-us/react-navigation-stack#f884cc1797aea4f8127b1d8e7ed3c8c875d6b81e",
     "react-navigation-tabs": "0.8.4"
   },
   "devDependencies": {
