@@ -37,7 +37,7 @@
     "@react-navigation/core": "3.0.2",
     "@react-navigation/native": "3.0.3",
     "react-navigation-drawer": "1.0.5",
-    "react-navigation-stack": "1.0.6",
+    "react-navigation-stack": "github:zoom-us/react-navigation-stack#f422ce8cd6f839acd1576933c0a1ad38ef4d665a",
     "react-navigation-tabs": "1.0.2"
   },
   "devDependencies": {
