@@ -1,5 +1,5 @@
 import React from 'react';
-import { AsyncStorage, Linking, Platform, BackHandler } from 'react-native';
+import { Linking, Platform, BackHandler } from 'react-native';
 import { polyfill } from 'react-lifecycles-compat';
 
 import NavigationActions from './NavigationActions';
@@ -208,7 +208,7 @@ export default function createNavigationContainer(Component) {
       let startupStateJSON = null;
       if (enableURLHandling !== false) {
         startupStateJSON =
-          persistenceKey && (await AsyncStorage.getItem(persistenceKey));
+          persistenceKey && (await window.localStorage.getItem(persistenceKey));
         const url = await Linking.getInitialURL();
         parsedUrl = url && urlToPathAndParams(url, uriPrefix);
       }
@@ -288,7 +288,7 @@ export default function createNavigationContainer(Component) {
       if (!persistenceKey) {
         return;
       }
-      await AsyncStorage.setItem(persistenceKey, JSON.stringify(nav));
+      await window.localStorage.setItem(persistenceKey, JSON.stringify(nav));
     };
 
     componentWillUnmount() {
